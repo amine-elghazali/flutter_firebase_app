@@ -29,9 +29,7 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return loading ? Loading() : Scaffold(
-      backgroundColor: Colors.grey[500] ,
       appBar: AppBar(
-        backgroundColor: Colors.grey[600],
         title: Text("Sign up"),
         actions: [
           TextButton.icon(
@@ -91,7 +89,6 @@ class _RegisterState extends State<Register> {
               SizedBox(height: 10.0,),
               ElevatedButton(
                 child: Text('Sign up',style: TextStyle(
-                    color: Colors.grey[800]
                   ),
                 ),
                 onPressed: () async {
@@ -114,7 +111,6 @@ class _RegisterState extends State<Register> {
                 errorMessage,
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: Colors.red
                 ),
               )
             ],

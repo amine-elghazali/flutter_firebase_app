@@ -30,9 +30,7 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return loading ? Loading() : Scaffold(
-      backgroundColor: Colors.grey[500] ,
       appBar: AppBar(
-        backgroundColor: Colors.grey[600],
         title: Text("Sign in"),
         actions: [
           TextButton.icon(
@@ -105,7 +103,6 @@ class _SignInState extends State<SignIn> {
                   }
                 },
                 child: Text('Sign in',style: TextStyle(
-                  color: Colors.grey[800]
                 ),)
               ),
               SizedBox(height:10.0),
@@ -113,7 +110,6 @@ class _SignInState extends State<SignIn> {
                 errorMessage,
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: Colors.red
                 ),
               )
             ],

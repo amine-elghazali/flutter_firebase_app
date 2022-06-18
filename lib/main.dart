@@ -1,6 +1,7 @@
 import 'package:app_firebase/models/user.dart';
 import 'package:app_firebase/screens/wrapper.dart';
 import 'package:app_firebase/services/auth.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       value: AuthService().user,  // Listening to our user stream
       initialData: null,
       child: MaterialApp(
-        home : Wrapper()
+        home : Wrapper(),
+        theme: FlexThemeData.light(scheme: FlexScheme.red),
       ),
     );
   }

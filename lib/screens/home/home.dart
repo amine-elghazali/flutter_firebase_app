@@ -32,10 +32,10 @@ class Home extends StatelessWidget {
     
       initialData: null,
       child: Scaffold(
-        backgroundColor: Colors.grey[600],
+        // backgroundColor: Colors.grey[600],
         appBar: AppBar(
           title: Text("home page"),
-          backgroundColor: Colors.grey[700],
+          // backgroundColor: Colors.grey[700],
           actions: [
             TextButton.icon(
               icon: Icon(
